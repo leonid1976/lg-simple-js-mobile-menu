@@ -11,9 +11,10 @@ Please submit an issue, or should you have the solution; make a pull request ple
 Any markup is proper, but you have to use <nav class=”some-class”></nav> as a wrap.<br><br> 
 
 
-##Using<br><br>
-<script type="text/javascript" src="lg-simple-js-mobile-menu.js "></script><br>
+##Using
 <link rel="stylesheet" href="lg-simple-js-mobile-menu.css">
+<script type="text/javascript" src="lg-simple-js-mobile-menu.js "></script><br>
+
 
 <script type="text/javascript"><br>
 burgerMenu(“some-class”, endpoint)<br>
