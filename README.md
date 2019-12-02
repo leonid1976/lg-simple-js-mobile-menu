@@ -12,9 +12,8 @@ Any markup is proper, but you have to use <nav class=”some-class”></nav> as 
 
 
 ##Using<br><br>
-
-<link rel="stylesheet" href="lg-simple-js-mobile-menu.css"><br>
-<script type="text/javascript" src="lg-simple-js-mobile-menu.js "></script><br><br>
+<script type="text/javascript" src="lg-simple-js-mobile-menu.js "></script><br>
+<link rel="stylesheet" href="lg-simple-js-mobile-menu.css">
 
 <script type="text/javascript"><br>
 burgerMenu(“some-class”, endpoint)<br>
