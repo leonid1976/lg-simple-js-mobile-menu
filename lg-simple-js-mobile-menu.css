@@ -1,0 +1,167 @@
+/*======================<menu-toggle>==================*/
+.menu_top.new-menu {
+    display: block;
+    position: absolute;
+    background-color: #faf6f0;
+    z-index: 3;
+    height: 320px;
+    padding: 80px 20px 20px 20px; 
+    left: 20px;
+  }
+  
+  .menu_top.new-menu>.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 220px;
+    width: 320px;
+  }
+ 
+  
+  
+  .menu_top.new-menu>.menu li {
+    display: block;
+    width: 100%;  
+  }
+  
+ .menu_top.new-menu>.menu li a {
+   display: block;
+   width: 100%;  
+  }
+
+
+/*-----------------humburger-menu-icon------------------*/
+
+.cmn-toggle-switch {
+  display: none;
+  position: absolute;
+  align-self: center;
+  z-index: 20;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 70px;
+  font-size: 0;
+  top: 12px;
+  left: 20px;
+//  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+ 
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  height: 4px;
+  background: #150c02;
+}
+ 
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #150c02;
+  content: "";
+}
+ 
+.cmn-toggle-switch span::before {
+  top: -15px;
+}
+ 
+.cmn-toggle-switch span::after {
+  bottom: -15px;
+}
+
+
+
+/*------------------changing to cross------------*/
+
+.cmn-toggle-switch__htx {
+  background-color: transparent;
+}
+ 
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0 0.3s;
+          transition: background 0 0.3s;
+}
+ 
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
+          transition-delay: 0.3s, 0;
+}
+ 
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform;
+}
+ 
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform;
+}
+ 
+/*----------------- active state (menu opend)-------------*/
+
+.cmn-toggle-switch__htx.active {
+  background-color: transparent;
+}
+ 
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+ 
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+ 
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+ 
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0, 0.3s;
+          transition-delay: 0, 0.3s;
+}
+
+/*--------- end toggle menu------------------------*/
+@media screen and (max-width: 380px) {
+  .menu_top.new-menu {
+    left: 0;
+    width: 100%;
+  }
+  
+  .cmn-toggle-switch {
+    left: 10px;
+  }
+}
+
+/*======================<menu-toggle end>==================*/
